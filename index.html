@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Waydroid</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Open Sans -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://codepen.io/CodeBoomer/pen/PzgWYp.css"> -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body data-spy="scroll" data-target="#scroll-spy">
+  <!-- partial:index.partial.html -->
+  <!-- Navigation - Fixed Top -->
+  <nav class="navbar navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-home" href="#home" role="button">
+          <svg class="lnr lnr-home">
+            <use xlink:href="#lnr-home"></use>
+          </svg>
+        </a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#scroll-spy" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="material-icons"></i>
+        </button>
+        <!-- <a class="navbar-brand1" href="#home" style="vertical-align: middle"> -->
+          <!-- <img class="" src="assets/images/waydroid.png" width="10%" style=" position: relative; top: 50%; transform: translateY(25%);"> -->
+          <!-- <i class="material-icons">mouse</i> -->
+        <!-- </a> -->
+      </div>
+      <!-- Collect the nav links, forms for toggling -->
+      <div class="collapse navbar-collapse" id="scroll-spy">
+        <!-- navbar-nav -->
+        <ul class="nav navbar-nav ">
+          <li><a href="#about">About</a></li>
+          <li><a href="#docs">Documentation</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#howto">How to</a></li>
+        </ul><!-- /.navbar-nav -->
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav><!-- /.fixed navigation -->
+  <section id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h3 class="display-3 text-center">&nbsp;</h3><img class="img-fluid d-block center mx-auto" src="assets/images/waydroid_white_tb.png" width="33%">
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+          <p>Waydroid is a container-based approach to boot a full Android system on a regular GNU/Linux system like Ubuntu.</p>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+      <div class="row">
+        <div class="col-xs-12">
+          <a class="tutorials-link" href="#about" role="button">Learn More</a>
+        </div>
+      </div>
+    </div><!-- /.container -->
+  </section><!-- /#home -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h3 class="display-3 text-center">&nbsp;</h3>
+          <div class="section-header"> About </div>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+          <p>Waydroid uses Linux namespaces (user, pid, uts, net, mount, ipc) to run a full Android system in a container and provide Android applications on any GNU/Linux-based platform.</p>
+          <p>The Android inside the container has direct access to needed hardwares.</p>
+          <p contenteditable="true">The Android runtime environment ships with a minimal customized Android system image based on the LineageOS. The used image is currently based on Android 10</p>
+          <h3 class="display-3 text-center">&nbsp;</h3>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section><!-- /#about -->
+  <section id="docs" class="" style="	background-image: linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(0,0,0,0.05));	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h3 class="display-3 text-center">&nbsp;</h3>
+          <div class="section-header" style=""> Documentation </div>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="col-md-12 text-center pb-3 mb-3">
+                <h3 class="display-3">Our development repositories are located on GitHub</h3>
+                <a class="btn rounded mx-auto mb-3 btn-lg px-2 pb-3 btn-warning" href="https://github.com/waydroid" target="blank">Waydroid Repo</a>
+              </div>
+              <div class="col-md-12 text-center pb-3 mb-3">
+                <p>&nbsp;</p>
+                <h3 class="display-3 mt-3 pt-3">Bug Reports can be filed on our repo</h3>
+                <a class="btn rounded mx-auto mb-3 btn-lg px-2 pb-3 btn-warning" href="https://github.com/Waydroid/waydroid/issues/new" target="blank">Issues</a>
+              </div>
+              <div class="col-md-12 text-center mb-3 pb-3">
+                <p>&nbsp;</p>
+                <h3 class="display-3 pt-3">Project documentation can be found on our docs repo</h3>
+                <p>(Our docs site is consistently expanding while development is still ongoing. Not all features will be documents as of yet)</p>
+                <a class="btn rounded px-2 mx-auto mb-3 btn-lg btn-warning" href="https://docs.waydro.id" target="blank">docs.waydro.id</a>
+              </div>
+            </div>
+          </div>
+          <p>&nbsp;</p><!-- /.col -->
+        </div><!-- /.row -->
+        <!-- /.row -->
+      </div><!-- /.container -->
+    </div>
+  </section>
+  <section id="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="display-3 text-center">&nbsp;</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="section-header"> Features </div>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+      <div class="row">
+        <div class="feature-container col-xs-12">
+          <div class="row">
+            <div class="feature col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0 text-center">
+              <img class="lnr lnr-bullhorn mx-auto" src="assets/images/photo1628875295.jpeg" width="320">
+              <h4>full app integration</h4>
+              <p class="text-dark" style="color:#000000">Waydroid integrated with Linux adding the Android apps to your linux applications folder</p>
+            </div><!-- /.feature -->
+            <div class="feature col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 text-center">
+              <img class="lnr lnr-bullhorn mx-auto" src="assets/images/photo1631111475.jpeg" width="320">
+              <h4>multi-window mode</h4>
+              <p class="text-dark" style="color:#000000">Waydroid expands on Android freeform window definition, adding a number of features</p>
+            </div><!-- /.feature -->
+            <div class="feature col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 text-center">
+              <img class="lnr lnr-bullhorn mx-auto" src="assets/images/photo1631468060 (1).jpeg" width="320">
+              <h4>FULL UI MODE</h4>
+              <p class="text-dark" style="color:#000000">For gaming and full screen entertainment, Waydroid can also be run to show the full Android UI</p>
+            </div><!-- /.feature -->
+          </div><!-- /.row -->
+        </div><!-- /.feature-container -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+    <div class="container-fluid">
+      <div class="banner row">
+        <div class="banner-child bc-left">
+          <h3 class="display-3 text-center">&nbsp;</h3>
+          <h1 class="text-center " style="color:#fff"> Android on Linux Like Never Before </h1>
+          <h3 class="display-3 text-center"> Waydroid brings all the apps you love, right to your desktop, working side by side your Linux applications </h3>
+          <h3 class="display-3 text-center">&nbsp;</h3>
+          <img class="img-fluid d-block center my-0 mx-auto mb-2" src="assets/images/photo1631464431.jpeg" width="350">
+          <h3 class="display-3 text-center">&nbsp;</h3><!-- /.animated scroll -->
+        </div>
+        <div class="col-md-12"></div><!-- /.banner-child -->
+        <!-- /.banner-child -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <div class="py-5 text-center text-white" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(https://static.pingendo.com/cover-bubble-dark.svg);  background-position: center center, center center;  background-size: cover, cover;  background-repeat: repeat, repeat;">
+    <div class="container">
+      <div class="row">
+      </div>
+    </div>
+  </div><!-- /#features -->
+  <section id="howto">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="display-3 text-center">&nbsp;</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="section-header"> How To Install </div>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="section-sub-header"> Installing Waydroid is easy </div>
+        </div><!-- /.col -->
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p>Replace DISTRO="bullseye" with your current target. Options: focal, bullseye, hirsuite</p>
+        </div>
+      </div><!-- /.row -->
+      <div class="row">
+        <div class="col-xs-12">
+          <figure class="highlight">
+            <pre><code class="language-html" data-lang="html">export DISTRO="bullseye" &amp;&amp; \
+curl https://repo.waydro.id/waydroid.gpg &gt; /usr/share/keyrings/waydroid.gpg &amp;&amp; \ 
+echo "deb [signedby=/usr/share/keyrings/waydroid.gpg] https://repo.waydro.id/ $DISTRO main" &gt; /etc/apt/sources.list.d/waydroid.list &amp;&amp; \
+sudo apt update</code></pre>
+          </figure>
+        </div><!-- /.col -->
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p>Then install Waydroid</p>
+        </div>
+      </div><!-- /.row -->
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <figure class="highlight">
+            <pre><code class="language-js" data-lang="js">apt install waydroid<br></code></pre>
+          </figure>
+        </div><!-- /.col -->
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p>And start the init process:</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <figure class="highlight">
+            <pre><code class="language-js" data-lang="js" contenteditable="true">sudo waydroid init<br></code></pre>
+          </figure>
+        </div>
+      </div><!-- /.row -->
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="section-sub-header"> Running Waydroid </div>
+          <p>After installing, you will want to start the waydroid-container service</p>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+      <div class="row">
+        <div class="col-xs-12">
+          <figure class="highlight">
+            <pre><code class="language-js" data-lang="js">sudo systemctl start waydroid-container
+</code></pre>
+          </figure>
+        </div><!-- /.col -->
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <p>Then launch waydroid container:</p>
+          <figure class="highlight">
+            <pre><code class="language-js" data-lang="js">sudo waydroid container start
+</code></pre>
+          </figure>
+        </div>
+        <div class="col-md-6">
+          <p>And launch the session:</p>
+          <figure class="highlight">
+            <pre><code class="language-js" data-lang="js">waydroid session start
+</code></pre>
+          </figure>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p>Then launch the waydroid app in full UI mode by running the Waydroid app in the app drawer, or through terminal:</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <figure class="highlight">
+            <pre><code class="language-js" data-lang="js">waydroid show-full-ui
+</code></pre>
+          </figure>
+          <p>For further instructions, please visit the docs site <a href="https://docs.waydro.id">here</a></p>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h4 contenteditable="true">
+            <p class="mb-0 py-1">Copyright © 2021 Waydroid. All rights reserved</p>
+          </h4>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a href="#home" role="button" class="scrollTop">
+    <svg class="lnr lnr-chevron-up">
+      <use xlink:href="#lnr-chevron-up"></use>
+    </svg>
+  </a>
+  <!-- partial -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
