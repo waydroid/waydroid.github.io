@@ -202,7 +202,7 @@
           <figure class="highlight">
             <pre><code class="language-html" data-lang="html">export DISTRO="bullseye" &amp;&amp; \
 curl https://repo.waydro.id/waydroid.gpg &gt; /usr/share/keyrings/waydroid.gpg &amp;&amp; \ 
-echo "deb [signedby=/usr/share/keyrings/waydroid.gpg] https://repo.waydro.id/ $DISTRO main" &gt; /etc/apt/sources.list.d/waydroid.list &amp;&amp; \
+echo "deb [signed-by=/usr/share/keyrings/waydroid.gpg] https://repo.waydro.id/ $DISTRO main" &gt; /etc/apt/sources.list.d/waydroid.list &amp;&amp; \
 sudo apt update</code></pre>
           </figure>
         </div><!-- /.col -->
