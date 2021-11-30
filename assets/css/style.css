@@ -1368,3 +1368,8 @@ a.tutorials-link:hover {
   margin-right: auto;
   width: 50%;
 }
+
+.brightness img:hover {
+    opacity: .5;
+}
+image:hover { filter: brightness(50%); }
