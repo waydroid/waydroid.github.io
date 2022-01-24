@@ -1381,7 +1381,7 @@ p {
   top: 0;
   left: 0;
   height: 50%;
-  background: #f3f4fe;
+
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -2663,4 +2663,16 @@ p {
     padding: 10px 20px;
   }
 }
+#donate {
+background: #f3f4fe;
+  
+}
+.donate_bg {
+ background-image: linear-gradient(to bottom, #ece9e680, #ffffff80), url("../css/background/wd-night-city.svg");
+ background-position: center top;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+
 /*# sourceMappingURL=ud-styles.css.map */
