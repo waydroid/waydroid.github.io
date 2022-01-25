@@ -103,7 +103,45 @@
                 animation-delay: 0.25s;
                 animation-name: fadeInUp;
               ">
-            <img src="assets/images/hero/main_landing.jpeg" alt="hero-image">
+			  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+			  <div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			  </div>
+			  <div class="carousel-inner">
+				<div class="carousel-item active">
+				  <img class="d-block img-fluid w-100" src="assets/images/hero/main_landing.jpeg">
+				  <div class="carousel-caption d-none d-md-block bg-light">
+					<h5>Full Integration Of Android on Linux</h5>
+					<p>Using Waydroid's Multi-Window Mode</p>
+				  </div>
+				</div>
+				<div class="carousel-item">
+				  <img class="d-block img-fluid w-100" src="assets/images/hero/Group 1.png">
+				  <div class="carousel-caption d-none d-md-block bg-light">
+					<h5>Mobile Linux Integrations</h5>
+					<p>Brought To Life With Waydroid</p>
+				  </div>
+				</div>
+				<div class="carousel-item">
+				  <img class="d-block img-fluid w-100" src="assets/images/hero/clean_desktop.jpeg">
+				  <div class="carousel-caption d-none d-md-block bg-light">
+					<h5>Bring Your Desktop To Life</h5>
+					<p>With Waydroids Fullscreen Mode For Desktops &amp; Kiosks</p>
+				  </div>
+				</div>
+			  </div>
+			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			  </button>
+			  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			  </button>
+			</div>
+		
             <img src="assets/images/hero/dotted-shape.svg" alt="shape" class="shape shape-1">
             <img src="assets/images/hero/dotted-shape.svg" alt="shape" class="shape shape-2">
           </div>
@@ -257,33 +295,32 @@
           </div>
         </div>
       </div>
-	  <div class="card mb-3">
-			<div class="card-header">
-				<ul class="nav nav-tabs card-header-tabs" data-bs-tabs="tabs">
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="true" data-bs-toggle="tab" href="#cpus1">Supported CPUs</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" data-bs-toggle="tab" href="#gpus1">Supported GPUs</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" data-bs-toggle="tab" href="#distros">Supported Distros</a>
-					</li>
-				</ul>
-			</div>
-			<form class="card-body tab-content">
-				<div class="tab-pane active" id="cpus1">
-					<p class="card-text">Waydroid currently supported images (ARM, ARM64, x86 &amp; x86_64 CPUs)</p>
-				</div>
-				<div class="tab-pane" id="gpus1">
-					<p class=" card-text">Waydroid uses Android's mesa integration for passthrough, and that restricts support to most ARM/ARM64 SOCs on the mobile side, and Intel/AMD GPUs for the PC side. For Nvidia GPUs (except tegra) and VMs, we recommend using <a href="https://docs.waydro.id/faq/get-waydroid-to-work-through-a-vm" >software-rendering</a> </p>
-				</div>
-				<div class="tab-pane" id="distros">
-					<p class=" card-text">Waydroid has a growing community that has been contributing towards install and troubleshooting instructions for the various distros available. Please check the <a href="https://docs.waydro.id/usage/install-on-desktops" >Install Documentation</a> for further info. </p>
-				</div>
-			</form>
-	   </div>
-	  
+      <div class="card mb-3">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs" data-bs-tabs="tabs">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="true" data-bs-toggle="tab" href="#cpus1">Supported CPUs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#gpus1">Supported GPUs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#distros">Supported Distros</a>
+            </li>
+          </ul>
+        </div>
+        <form class="card-body tab-content">
+          <div class="tab-pane active" id="cpus1">
+            <p class="card-text">Waydroid currently supported images (ARM, ARM64, x86 &amp; x86_64 CPUs)</p>
+          </div>
+          <div class="tab-pane" id="gpus1">
+            <p class=" card-text">Waydroid uses Android's mesa integration for passthrough, and that restricts support to most ARM/ARM64 SOCs on the mobile side, and Intel/AMD GPUs for the PC side. For Nvidia GPUs (except tegra) and VMs, we recommend using <a href="https://docs.waydro.id/faq/get-waydroid-to-work-through-a-vm">software-rendering</a> </p>
+          </div>
+          <div class="tab-pane" id="distros">
+            <p class=" card-text">Waydroid has a growing community that has been contributing towards install and troubleshooting instructions for the various distros available. Please check the <a href="https://docs.waydro.id/usage/install-on-desktops">Install Documentation</a> for further info. </p>
+          </div>
+        </form>
+      </div>
       <div class="row">
         <div class="col-md-12">
           <p>Dependencies:</p>
@@ -408,30 +445,29 @@ sudo apt update</code></pre>
               </div>
               <div class="px-md-5 col-md-6 d-flex flex-column align-items-start justify-content-center order-1 order-md-2">
                 <h1>Waydroid-Linux</h1>
-				<h2 style="color: var(--primary-color);">Alpha</h2>
+                <h2 style="color: var(--primary-color);">Alpha</h2>
                 <p class="mb-3"> We have started creating a few fully-integrated distros in order to demonstrate some of the possibilities that Waydroid can help achieve. <br> Each of the distros we produce will also showcase some of the work from our growing community of contributors. <br> Our initial alpha releases of this integration are based on Ubuntu 20.04 (focal) and Ubuntu 21.10 (impish), and include many added tools and scripts to help open up what is possible. </p>
-				<div class="card mb-3">
-					<div class="card-header">
-						<h5 class="card-title">Supported Hardware</h5>
-						<ul class="nav nav-tabs card-header-tabs" data-bs-tabs="tabs">
-							<li class="nav-item">
-								<a class="nav-link active" aria-current="true" data-bs-toggle="tab" href="#cpus">Supported CPUs</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" data-bs-toggle="tab" href="#gpus">Supported GPUs</a>
-							</li>
-						</ul>
-					</div>
-					<form class="card-body tab-content">
-						<div class="tab-pane active" id="cpus">
-							<p class="card-text">Waydroid-Linux currently only supports x86_64 CPUs (Intel/AMD)</p>
-						</div>
-						<div class="tab-pane" id="gpus">
-							<p class=" card-text">Waydroid-Linux uses Android's mesa integration for passthrough, and that restricts support to Intel and AMD GPUs<br>
-							For Nvidia GPUs and VMs, we recommend using <a href="https://docs.waydro.id/faq/get-waydroid-to-work-through-a-vm" >software-rendering</a> </p>
-						</div>
-					</form>
-			   </div>
+                <div class="card mb-3">
+                  <div class="card-header">
+                    <h5 class="card-title">Supported Hardware</h5>
+                    <ul class="nav nav-tabs card-header-tabs" data-bs-tabs="tabs">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="true" data-bs-toggle="tab" href="#cpus">Supported CPUs</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#gpus">Supported GPUs</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <form class="card-body tab-content">
+                    <div class="tab-pane active" id="cpus">
+                      <p class="card-text">Waydroid-Linux currently only supports x86_64 CPUs (Intel/AMD)</p>
+                    </div>
+                    <div class="tab-pane" id="gpus">
+                      <p class=" card-text">Waydroid-Linux uses Android's mesa integration for passthrough, and that restricts support to Intel and AMD GPUs<br> For Nvidia GPUs and VMs, we recommend using <a href="https://docs.waydro.id/faq/get-waydroid-to-work-through-a-vm">software-rendering</a> </p>
+                    </div>
+                  </form>
+                </div>
                 <!---------->
                 <!-- Button trigger modal -->
                 <button type="button" class="btn ud-main-btn ud-link-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"> Download Now </button>
