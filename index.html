@@ -346,10 +346,10 @@
         </div>
         <form class="card-body tab-content">
           <div class="tab-pane active" id="cpus1">
-            <p class="card-text">Waydroid currently supported images (ARM, ARM64, x86 &amp; x86_64 CPUs)</p>
+            <p class="card-text">Waydroid supports most common architectures (ARM, ARM64, x86 &amp; x86_64 CPUs)</p>
           </div>
           <div class="tab-pane" id="gpus1">
-            <p class=" card-text">Waydroid uses Android's mesa integration for passthrough, and that restricts support to most ARM/ARM64 SOCs on the mobile side, and Intel/AMD GPUs for the PC side. For Nvidia GPUs (except tegra) and VMs, we recommend using <a href="https://docs.waydro.id/faq/get-waydroid-to-work-through-a-vm">software-rendering</a> </p>
+            <p class=" card-text">Waydroid uses Android's mesa integration for passthrough, and that enables support to most ARM/ARM64 SOCs on the mobile side, and Intel/AMD GPUs for the PC side. For Nvidia GPUs (except tegra) and VMs, we recommend using <a href="https://docs.waydro.id/faq/get-waydroid-to-work-through-a-vm">software-rendering</a> </p>
           </div>
           <div class="tab-pane" id="distros">
             <p class=" card-text">Waydroid has a growing community that has been contributing towards install and troubleshooting instructions for the various distros available. Please check the <a href="https://docs.waydro.id/usage/install-on-desktops">Install Documentation</a> for further info. </p>
@@ -484,13 +484,16 @@ sudo apt update</code></pre>
                 <p class="mb-3"> We have started creating a few fully-integrated distros in order to demonstrate some of the possibilities that Waydroid can help achieve. <br> Each of the distros we produce will also showcase some of the work from our growing community of contributors. <br> Our initial alpha releases of this integration are based on Ubuntu 20.04 (focal) and Ubuntu 21.10 (impish), and include many added tools and scripts to help open up what is possible. </p>
                 <div class="card mb-3">
                   <div class="card-header">
-                    <h5 class="card-title">Supported Hardware</h5>
+                    <h5 class="card-title">Information</h5>
                     <ul class="nav nav-tabs card-header-tabs" data-bs-tabs="tabs">
                       <li class="nav-item">
                         <a class="nav-link active" aria-current="true" data-bs-toggle="tab" href="#cpus">Supported CPUs</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" data-bs-toggle="tab" href="#gpus">Supported GPUs</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#sources">Sources</a>
                       </li>
                     </ul>
                   </div>
@@ -500,6 +503,40 @@ sudo apt update</code></pre>
                     </div>
                     <div class="tab-pane" id="gpus">
                       <p class=" card-text">Waydroid-Linux uses Android's mesa integration for passthrough, and that restricts support to Intel and AMD GPUs<br> For Nvidia GPUs and VMs, we recommend using <a href="https://docs.waydro.id/faq/get-waydroid-to-work-through-a-vm">software-rendering</a> </p>
+                    </div>
+                    <div class="tab-pane" id="sources">
+                      <p class=" card-text">We have been working with a number of devs on Waydroid-Linux, and have been creating or contributing to a number of projects for it. <br>
+					  Here are just a few of the projects we've been using:</p>
+					<ol class="list-group list-group-numbered">
+					  <li class="list-group-item d-flex justify-content-between align-items-start">
+						<div class="ms-2 me-auto">
+						  <div class="fw-bold">Waydroid-Linux Tools</div>
+						  A few scripts, configs, and themes for the Waydroid-Linux builds
+						</div>
+						<a href="https://github.com/waydroid/waydroid-linux_tools"><span class="badge bg-primary rounded-pill">Sources</span></a>
+					  </li>
+					  <li class="list-group-item d-flex justify-content-between align-items-start">
+						<div class="ms-2 me-auto">
+						  <div class="fw-bold">Waydroid-Settings</div>
+						  A GTK app written in Python to control Waydroid settings and expand with scripts (shell/py)
+						</div>
+						<a href="https://github.com/axel358/Waydroid-Settings"><span class="badge bg-primary rounded-pill">Sources</span></a>
+					  </li>
+					  <li class="list-group-item d-flex justify-content-between align-items-start">
+						<div class="ms-2 me-auto">
+						  <div class="fw-bold">Penguins-Eggs</div>
+						  A tool used for packaging and installation of various Linux distros 
+						</div>
+						<a href="https://github.com/electrikjesus/penguins-eggs"><span class="badge bg-primary rounded-pill mx-3">Our Fork</span></a>
+						<a href="https://github.com/electrikjesus/penguins-eggs"><span class="badge bg-primary rounded-pill">Upstream</span></a>
+					  </li>
+					  <li class="list-group-item d-flex justify-content-between align-items-start">
+						<div class="ms-2 me-auto">
+						  <div class="fw-bold">Others worth mentioning:</div>
+						</div>
+						<a href="https://github.com/electrikjesus/waydroid-10-11-switch-script"><span class="badge bg-primary rounded-pill">Waydroid 10/11 switch script</span></a>
+					  </li>
+					</ol>
                     </div>
                   </form>
                 </div>
