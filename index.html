@@ -325,8 +325,8 @@
         <div class="col-lg-12">
           <div class="ud-section-title text-center mx-auto">
             <span>Instructions</span>
-            <h2>Debian / Ubuntu Instructions</h2>
-            <p> Installing Waydroid on Debian or Ubuntu can be done in just a few simple steps </p>
+            <h2>Quick install reference</h2>
+            <p>For systemd distributions</p>
           </div>
         </div>
       </div>
@@ -339,9 +339,6 @@
             <li class="nav-item">
               <a class="nav-link" data-bs-toggle="tab" href="#gpus1">Supported GPUs</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#distros">Supported Distros</a>
-            </li>
           </ul>
         </div>
         <form class="card-body tab-content">
@@ -351,100 +348,54 @@
           <div class="tab-pane" id="gpus1">
             <p class=" card-text">Waydroid uses Android's mesa integration for passthrough, and that enables support to most ARM/ARM64 SOCs on the mobile side, and Intel/AMD GPUs for the PC side. For Nvidia GPUs (except tegra) and VMs, we recommend using <a href="https://docs.waydro.id/faq/get-waydroid-to-work-through-a-vm">software-rendering</a> </p>
           </div>
-          <div class="tab-pane" id="distros">
-            <p class=" card-text">Waydroid has a growing community that has been contributing towards install and troubleshooting instructions for the various distros available. Please check the <a href="https://docs.waydro.id/usage/install-on-desktops">Install Documentation</a> for further info. </p>
-          </div>
         </form>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <p>Dependencies:</p>
-          <li>python3</li>
+          <p>Follow the install instructions for your linux distribution. You can find a list in our <a href="https://docs.waydro.id/usage/install-on-desktops">docs</a>.
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <li>lxc</li>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <li>curl</li>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <li>Wayland session manager <strong>!!IMPORTANT!!</strong></li>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <ul></ul>
-          <br>
-          <p> Replace DISTRO="bullseye" with your current target. Options: focal, bullseye, hirsute </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <pre><code class="hljs" data-lang="">export DISTRO="bullseye" &amp;&amp; \
-sudo curl https://repo.waydro.id/waydroid.gpg --output /usr/share/keyrings/waydroid.gpg &amp;&amp; \ 
-echo "deb [signed-by=/usr/share/keyrings/waydroid.gpg] https://repo.waydro.id/ $DISTRO main" &gt; ~/waydroid.list &amp;&amp; \
-sudo mv ~/waydroid.list /etc/apt/sources.list.d/waydroid.list &amp;&amp; \
-sudo apt update</code></pre>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <p>Then install Waydroid</p>
-          <pre><code class="hljs language-bash" data-lang="">sudo apt install waydroid<br></code></pre>
-        </div>
-        <div class="col-md-6">
-          <p>And start the init process:</p>
-          <div class="col-md-12">
-            <pre><code class="hljs language-bash" data-lang="">sudo waydroid init<br></code></pre>
-          </div>
+          <p>After installing you should start the waydroid-container service, if it was not started automatically:</p>
         </div>
         <div class="col-md-12">
-          <p class="text-danger">If download is slow, you can use Bardia's mirror for init:</p>
-          <div class="col-md-12">
-            <pre><code class="hljs language-bash" data-lang="">sudo waydroid init -c https://waydroid.bardia.tech/OTA/system -v https://waydroid.bardia.tech/OTA/vendor<br></code></pre>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="section-sub-header">Running Waydroid</div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <p> After installing, you will want to start the waydroid-container service </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-md-12">
           <figure class="highlight">
-            <pre><code class="hljs language-bash" data-lang="">sudo systemctl start waydroid-container
+            <pre><code class="hljs language-bash" data-lang="">sudo systemctl enable --now waydroid-container
 </code></pre>
           </figure>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <p> Then launch the waydroid app in full UI mode by running the Waydroid app in the app drawer, or through the terminal: </p>
+          <p>Then launch Waydroid from the applications menu and follow the first-launch wizard.</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <figure class="highlight">
-            <pre><code class="hljs language-bash" data-lang="">waydroid show-full-ui
-</code></pre>
-          </figure>
+          <p>If prompted, use the following links for System OTA and Vendor OTA:</p>
+        </div>
+        <div class="col-md-6">
+          <pre><code class="hljs language-bash" data-lang=""><p>https://ota.waydro.id/system</p></code></pre>
+        </div>
+        <div class="col-md-6">
+          <pre><code class="hljs language-bash" data-lang=""><p>https://ota.waydro.id/vendor</p></code></pre>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <p> For further instructions, please visit the docs site <a target="BLANK" href="https://docs.waydro.id">here</a>
+          <p class="text-danger">If the download is slow, you can use Bardia's mirror instead:</p>
+        </div>
+        <div class="col-md-6">
+          <pre><code class="hljs language-bash" data-lang=""><p>https://waydroid.bardia.tech/OTA/system</p></code></pre>
+        </div>
+        <div class="col-md-6">
+          <pre><code class="hljs language-bash" data-lang=""><p>https://waydroid.bardia.tech/OTA/vendor</p></code></pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p>For further instructions, please visit the docs site <a target="BLANK" href="https://docs.waydro.id">here</a>
           </p>
         </div>
       </div>
