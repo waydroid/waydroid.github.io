@@ -13,13 +13,6 @@
       ud_header.classList.remove("sticky");
     }
 
-    // === logo change
-    if (ud_header.classList.contains("sticky")) {
-      logo.src = "assets/images/logo/waydroid_icon_sm.png";
-    } else {
-      logo.src = "assets/images/logo/waydroid_icon_sm.png";
-    }
-
     // show or hide the back-top-top button
     const backToTop = document.querySelector(".back-to-top");
     if (
