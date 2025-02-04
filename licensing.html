@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waydroid | Android in a Linux container</title>
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Waydroid - Android in a Linux container">
+  <meta name="description" content="Waydroid - Android in a Linux container">
+  <!--====== Favicon Icon ======-->
+  <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.png">
+  <!-- ===== All CSS files ===== -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/lineicons.css">
+  <link rel="stylesheet" href="assets/css/ud-styles.css">
+  <link rel="stylesheet" href="assets/css/default.min.css">
+  <link rel="stylesheet" href="assets/css/sharing.css">
+  <script src="assets/js/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+
+<body>
+  <!-- ====== Header Start ====== -->
+  <header class="ud-header sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+              <img class="w-75" src="assets/images/logo/waydroid_icon_sm.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler">
+              <span class="toggler-icon"> </span>
+              <span class="toggler-icon"> </span>
+              <span class="toggler-icon"> </span>
+            </button>
+            <div class="navbar-collapse">
+              <ul id="nav" class="navbar-nav mx-auto" style="transform: translateX(20%)">
+                <li class="nav-item">
+                  <a class="ud-menu-scroll" href="index.html#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="ud-menu-scroll" href="index.html#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="ud-menu-scroll active" href="index.html#docs">Docs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="ud-menu-scroll" href="index.html#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="ud-menu-scroll" href="licensing.html">Licensing</a>
+                </li>
+              </ul>
+            </div>
+            <div class="navbar-btn d-sm-inline-block mr-3 pr-3">
+              <a class="ud-main-btn ud-white-btn" href="#install" style="margin-right: 1rem"> Install</a>
+            </div>
+            <div class="navbar-btn2 d-none d-sm-inline-block">
+              <a class="ud-main-btn navbar-btn2-link ud-white-btn" href="#wdlinux"> Waydroid-Linux Beta</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ====== Header End ====== -->
+  <!-- ====== Hero Start ====== -->
+  <section class="ud-hero" id="home" style="
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0)
+          ),
+          url(assets/css/background/wd-night-city.svg);
+        background-position: top left, cover;
+        background-size: 100%, center;
+        background-repeat: repeat, repeat;
+      ">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center pb-5">
+          <div class="ud-hero-content wow fadeInUp" data-wow-delay=".2s" style="
+                visibility: visible;
+                animation-delay: 0.2s;
+                animation-name: fadeInUp;
+              ">
+            <img class="w-75" src="assets/images/hero/waydroid_white_tb.png">
+            <h2 class="text-light"> Licensing Information</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="py-5" style="" id="oems">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 ">
+          <h2 class="display-3">Licensing</h2>
+          <p>Waydroid is available under different licensing options designed to accommodate the needs of our various users:&nbsp;</p>
+          <div class="row">
+            <div class="col-md-12" style="">
+              <li>Waydroid licensed under <b>commercial</b> licenses is appropriate for development of proprietary/commercial software where you do not want to share any source code with third parties or otherwise cannot comply with the terms of the GNU GPL version 3. </li>
+              <li>Waydroid licensed under the <b>GNU General Public License (GPL) version 3</b> is appropriate for the development of Waydroid applications provided you can comply with the terms and conditions of the GNU GPL version 3. </li>
+            </div>
+          </div>
+          <ul>
+          </ul>
+          <br>
+          <p style="">Waydroid also contains third-party code that is licensed under specific open-source licenses from the original authors (See <b>Third-Party Code in Waydroid</b> below).&nbsp;</p>
+          <p style=""><b>Note</b>: For open-source licensed Waydroid, some specific parts are available under the GNU General Public License (GPL). For commercial licensees, all Waydroid related changes are available under commercial Waydroid licenses.</p>
+          <p style=""><b><i>Waydroid documentation</i></b>&nbsp; is available under commercial licenses from Navotpala Tech (Bliss Co-Labs), and under the terms of the GNU Free Documentation License (FDL) version 1.3, as published by the Free Software Foundation.</p>
+          <p style="">Educational licenses are available for students and educators in qualified educational institutions or universities.</p><br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Purchasing and Sales Information</h2>
+          <p>To purchase a commercial Waydroid license, <a href="mailto:waydroid.project@gmail.com?subject=Waydroid%20License%20Pricing">contact us</a> with your request.</p>
+          <br>
+          <p>For further information and assistance about Waydroid licensing, contact us or see our website for further details.</p><br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Third-Party Code in Waydroid</h2>
+          <p>The following documents the open-source licenses used in different parts of Waydroid:</p>
+          <div class="row">
+            <div class="col-md-12" style="">
+              <li>Waydroid inherits the same Apache v2 licensing that AOSP uses for most of the components, while many of the other components like Android-Generic Project use GPL-2.0 license.</li>
+              <li>For product use, we do not include proprietary components like Google Apps, Native-Bridge, and widevine.</li>
+              <li>Some features and toolkits like the <a href="https://bliss-bass.blisscolabs.dev" target="_BLANK">Bliss-BASS</a> rebranding toolkit might require additional licensing to be obtained by the customer.</li>
+            </div>
+          </div>
+          <p> - <a href="https://source.android.com/docs/setup/about/licenses" target="_BLANK">AOSP Licenses</a> - <a href="https://github.com/BlissRoms-x86/manifest/blob/arcadia-x86/License" target="_BLANK">Bliss OS License</a> - <a href="https://github.com/android-generic/vendor_ag/blob/unified/LICENSE.md" target="_BLANK">Android-Generic Project License</a> - <a href="https://github.com/boringdroid/boringdroid/blob/master/LICENSE" target="_BLANK">Boringdroid License</a> - <br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ====== Hero End ====== -->
+  <!-- ====== Features Start ====== -->
+  <div class="py-5" style="" id="oems">
+    <div class="container">
+      <div class="row">
+        <h3 class="display-4 text-center">FAQ</h3>
+        <div class="col-md-6 p-3">
+          <h4>Q: Is Waydroid suitable for individuals?</h4>
+          <p> A: Yes, Waydroid public releases are designed to be used to allow Android applications to run on top of a normal Linux environment<br><br>We offer users multiple types of builds to help fit their needs:<br>- <b>Gapps Builds</b>: Comes with Google Play Store<br>- <b>Vanilla Builds</b>: Comes with no added apps and services.&nbsp;</p>
+        </div>
+        <div class="col-md-6 p-3">
+          <h4>Q: Does Waydroid include proprietary software?</h4>
+          <p> A: Yes. Our GMS/Gapps releases include proprietary software, and are intended for individuals only, while our Vanilla builds might include some proprietary parts as well.&nbsp;<br><br>Proprietary redistributables in all Waydroid public builds:&nbsp;<br>- some media codecs (for decoding H.264/HEVC)&nbsp;<br><br>Extra proprietary redistributables in Waydroid Gapps builds include Google Play Serivces &amp; Google Play Store.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 p-3">
+          <h4>Q: Is Waydroid suitable for companies?</h4>
+          <p> A: Yes, but not all builds. We produce vanilla Waydroid builds. While those builds are very basic, they do include much of what would be needed to base a product off of. If your product requires no additional changes on top of what is released to the public, then you are free to use it at no cost.<br>If your product requires Google Apps, ARM/ARM64 Native-Bridge, or Widevine, due to licensing restrictions, we suggest that you <a href="mailto:waydroid.project@gmail.com?subject=Development Contract Inquiry">reach out</a> and we can help you look into alternative options using open-source solutions.&nbsp;<br></p>
+        </div>
+        <div class="col-md-6 p-3">
+          <h4>Q: Can my company use Waydroid with Gapps as-is?</h4>
+          <p> A: No. The Waydroid versions that include Google Play Store, native-bridge, or widevine are not fit for commercial use or meant to be included in products as they contain proprietary features and services that typically require per-product licensing through Google, Intel, or others.&nbsp;We do however release public Vanilla builds that do not contain any proprietary resources.<br><br>Most of those proprietary licenses are not eligible for use in&nbsp;generic operating-system setups. Some require the device to pass certification programs that is only meant for single device certifications. For this reason, we do offer open-source alternatives.<br></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 p-3">
+          <h4>Q: Can my company use Waydroid source-code in a product?</h4>
+          <p style=""> A: Yes, <b>If you are an individual developer, a startup, or represent some other business enterprise and you are interested in using our sources, the open-source licenses we maintain allow you to use the source at no cost as long as you use it: A) as-is, B) you contribute any changes made back to the source, or C) produce the full source to the public independently.</b> If you would like to use our source and make changes to it that you do not plan on releasing as open-source, we request you contact us to work out a <b>per-device licensing agreement</b> and/or setup a <a href="mailto:waydroid.project@gmail.com?subject=Development Contract Inquiry">development contract</a> for branding, optimizations and specific needs.</p>
+        </div>
+        <div class="col-md-6 p-3">
+          <h4> Q: Does my company have to release any changes made to the collective source code of Waydroid? </h4>
+          <p> A: This all depends on where the changes in the source were made, as many repos in the project retain a different OSS Licenses, there are different requirements per repo. If you are unsure if your company needs to release the source for any of the changes made, please feel free to contact us.<br><br>Another thing to pay attention to is if the tools being used require the end product or alterations to be released. Some Apache 2.0 licensed projects allow for that requirement to be made. Some versions of Android-Generic Project also have similar licensing requirements. We have put together a toolkit to help identify these types of licenses within the source. You can find that <a href="https://github.com/android-generic/agpm-auto-oss-license-documentation" target="_BLANK">here</a>.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 pt-5 text-center">
+          <h1>Licensing Questions?</h1>
+          <h5>We try to offer a wide variety of licensing options that cater to organizations of all sizes.</h5>
+          <p class="mb-3">If you are not sure if you need a license, or just have some questions on our licensing options, please feel free to contact us. We love helping out others find the best way to contribute back to the source.</p>
+          <a class="btn btn-outline-primary mt-3" href="mailto:waydroid.project@gmail.com?subject=Licensing Inquiry">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ====== Features End ====== -->
+  <!-- ====== About Start ====== -->
+  <!-- ====== About End ====== -->
+  <!-- ====== Docs Start ====== -->
+  <!-- ====== Docs End ====== -->
+  <!-- ====== FAQ Start ====== -->
+  <!-- ====== FAQ End ====== -->
+  <section></section>
+  <!-- ====== Team Start ====== -->
+  <section id="donate">
+    <div class="container-fluid">
+      <div class="row text-center py-5">
+        <div class="col-md-12" id="contact">
+          <h1>Get in Touch</h1>
+          <h4 class="text-body my-3"> If you want to get in contact with the developers, please feel free to join the WayDroid groups </h4>
+          <div class="row mt-5">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+              <a target="BLANK" href="https://t.me/WayDroid" class="">
+                <div class="col-md-12">
+                  <img class="img-fluid w-25" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg">
+                  <h3>Telegram</h3>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a target="BLANK" href="https://matrix.to/#/#waydroid:matrix.org">
+                <div class="col-md-12">
+                  <img class="img-fluid w-25" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Matrix_icon.svg">
+                  <h3> Matrix </h3>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+          <h3 class="display-3">&nbsp;</h3>
+          <!-- /.animated scroll -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="donate_bg py-5 text-center">
+          <h1>Help Us Grow</h1>
+          <br>
+          <h4> Waydroid is now on Open-Collective </h4>
+          <h4 class="pb-5"> We are now accepting donations and sponsorships through Open-Collective. </h4>
+          <div class="row">
+            <div>
+              <!-- <script class="text-center" width=40% style="width: 40%;" src='https://opencollective.com/waydroid/banner.js'></script> -->
+              <a href="https://opencollective.com/waydroid/donate" target="_blank">
+                <img class="img-fluid w-50" src="https://opencollective.com/webpack/donate/button@2x.png?color=blue">
+              </a>
+            </div>
+            <!-- /.animated scroll -->
+          </div>
+          <!-- /.banner-child -->
+          <!-- /.banner-child -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </div>
+  </section>
+  <!-- ====== Team End ====== -->
+  <!-- ====== Contact Start ====== -->
+  <!-- ====== Contact End ====== -->
+  <!-- ====== Footer Start ====== -->
+  <footer class="ud-footer wow fadeInUp bg-dark" data-wow-delay=".15s" style="
+        visibility: visible;
+        animation-delay: 0.15s;
+        animation-name: fadeInUp;
+      ">
+    <div class="ud-footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <ul class="ud-footer-bottom-left">
+              <li>
+                <a href="https://github.com/waydroid">Source</a>
+              </li>
+              <li>
+                <a href="https://docs.waydro.id">Documentation</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <p class="ud-footer-bottom-center"> A <a href="https://blisslabs.org"> BlissLabs</a> Project </p>
+          </div>
+          <div class="col-md-4">
+            <p class="ud-footer-bottom-right"> Copyright © 2022 All rights reserved. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ====== Footer End ====== -->
+  <!-- ====== Back To Top Start ====== -->
+  <a href="javascript:void(0)" class="back-to-top" style="display: flex">
+    <i class="lni lni-chevron-up"> </i>
+  </a>
+  <!-- ====== Back To Top End ====== -->
+  <!-- ====== All Javascript Files ====== -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // ==== for menu scroll
+    const pageLink = document.querySelectorAll(".ud-menu-scroll");
+    pageLink.forEach((elem) => {
+      elem.addEventListener("click", (e) => {
+        e.preventDefault();
+        document.querySelector(elem.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
+          offsetTop: 1 - 60,
+        });
+      });
+    });
+    // section menu active
+    function onScroll(event) {
+      const sections = document.querySelectorAll(".ud-menu-scroll");
+      const scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      for (let i = 0; i < sections.length; i++) {
+        const currLink = sections[i];
+        const val = currLink.getAttribute("href");
+        const refElement = document.querySelector(val);
+        const scrollTopMinus = scrollPos + 73;
+        if (refElement.offsetTop <= scrollTopMinus && refElement.offsetTop + refElement.offsetHeight > scrollTopMinus) {
+          document.querySelector(".ud-menu-scroll").classList.remove("active");
+          currLink.classList.add("active");
+        } else {
+          currLink.classList.remove("active");
+        }
+      }
+    }
+    window.document.addEventListener("scroll", onScroll);
+  </script>
+  <script>
+    var myModal = document.getElementById('myModal')
+    var myInput = document.getElementById('myInput')
+    myModal.addEventListener('shown.bs.modal', function() {
+      myInput.focus()
+    })
+  </script>
+</body>
+
+</html>
