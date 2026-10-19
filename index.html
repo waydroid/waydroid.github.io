@@ -858,10 +858,19 @@
     const pageLink = document.querySelectorAll(".ud-menu-scroll");
     pageLink.forEach((elem) => {
       elem.addEventListener("click", (e) => {
+        const href = elem.getAttribute("href");
+        // Same-page anchors scroll in place. Links to other pages navigate normally.
+        if (!href || href.charAt(0) !== "#") {
+          return;
+        }
+        const target = document.querySelector(href);
+        if (!target) {
+          return;
+        }
         e.preventDefault();
-        document.querySelector(elem.getAttribute("href")).scrollIntoView({
+        target.scrollIntoView({
           behavior: "smooth",
-          offsetTop: 1 - 60,
+          block: "start",
         });
       });
     });
@@ -872,7 +881,13 @@
       for (let i = 0; i < sections.length; i++) {
         const currLink = sections[i];
         const val = currLink.getAttribute("href");
+        if (!val || val.charAt(0) !== "#") {
+          continue;
+        }
         const refElement = document.querySelector(val);
+        if (!refElement) {
+          continue;
+        }
         const scrollTopMinus = scrollPos + 73;
         if (refElement.offsetTop <= scrollTopMinus && refElement.offsetTop + refElement.offsetHeight > scrollTopMinus) {
           document.querySelector(".ud-menu-scroll").classList.remove("active");
