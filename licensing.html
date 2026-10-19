@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Waydroid | Android in a Linux container</title>
+  <title>Waydroid | Licensing</title>
   <!-- Primary Meta Tags -->
-  <meta name="title" content="Waydroid - Android in a Linux container">
-  <meta name="description" content="Waydroid - Android in a Linux container">
+  <meta name="title" content="Waydroid licensing">
+  <meta name="description" content="How Waydroid is licensed for personal use, companies, and commercial products. Google Play (GMS) and Widevine cannot be licensed for generic systems such as Waydroid.">
   <!--====== Favicon Icon ======-->
   <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.png">
   <!-- ===== All CSS files ===== -->
@@ -18,13 +18,14 @@
   <link rel="stylesheet" href="assets/css/ud-styles.css">
   <link rel="stylesheet" href="assets/css/default.min.css">
   <link rel="stylesheet" href="assets/css/sharing.css">
+  <link rel="stylesheet" href="assets/css/licensing.css">
   <script src="assets/js/highlight.min.js"></script>
   <script>
     hljs.initHighlightingOnLoad();
   </script>
 </head>
 
-<body>
+<body class="license-page">
   <!-- ====== Header Start ====== -->
   <header class="ud-header sticky">
     <div class="container">
@@ -71,7 +72,7 @@
   </header>
   <!-- ====== Header End ====== -->
   <!-- ====== Hero Start ====== -->
-  <section class="ud-hero" id="home" style="
+  <section class="ud-hero license-hero" id="home" style="
         background-image: linear-gradient(
             to bottom,
             rgba(0, 0, 0, 0.8),
@@ -85,109 +86,270 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center pb-5">
-          <div class="ud-hero-content wow fadeInUp" data-wow-delay=".2s" style="
-                visibility: visible;
-                animation-delay: 0.2s;
-                animation-name: fadeInUp;
-              ">
-            <img class="w-75" src="assets/images/hero/waydroid_white_tb.png">
-            <h2 class="text-light"> Licensing Information</h2>
+          <div class="ud-hero-content">
+            <img class="license-logo" src="assets/images/hero/waydroid_white_tb.png" alt="Waydroid">
+            <p class="license-kicker">Legal</p>
+            <h1>Licensing</h1>
+            <p class="license-lead">Waydroid is dual-licensed, on the same terms as Bliss OS. You can use it under GPL version 3, or under a commercial license from Navotpala Tech (Bliss Co-Labs Inc.). This page explains which license applies to you.</p>
+            <div class="license-jumps">
+              <a href="#paths">Which path is mine?</a>
+              <a href="#options">License options</a>
+              <a href="#faq">Company FAQ</a>
+              <a href="#third-party">Third-party code</a>
+              <a href="#product">Products</a>
+              <a href="#questions">Contact</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <div class="py-5" style="" id="oems">
+  <section class="py-5 license-section" id="paths">
     <div class="container">
+      <h2>Which path is mine?</h2>
+      <p class="license-intro">Most of the confusion is about public downloads. A file from this website is not automatically a license to put Waydroid in a product.</p>
       <div class="row">
-        <div class="col-md-12 ">
-          <h2 class="display-3">Licensing</h2>
-          <p>Waydroid is available under different licensing options designed to accommodate the needs of our various users:&nbsp;</p>
-          <div class="row">
-            <div class="col-md-12" style="">
-              <li>Waydroid licensed under <b>commercial</b> licenses is appropriate for development of proprietary/commercial software where you do not want to share any source code with third parties or otherwise cannot comply with the terms of the GNU GPL version 3. </li>
-              <li>Waydroid licensed under the <b>GNU General Public License (GPL) version 3</b> is appropriate for the development of Waydroid applications provided you can comply with the terms and conditions of the GNU GPL version 3. </li>
-            </div>
+        <div class="col-lg-4 mb-4">
+          <div class="license-card license-path license-path-ok">
+            <span class="license-step">Path 1</span>
+            <h3>I use this myself</h3>
+            <p>Download the public builds and run Android apps on your own Linux system. Builds that include Google Play are a convenience for personal use. They are not permission for a company to ship them.</p>
           </div>
-          <ul>
-          </ul>
-          <br>
-          <p style="">Waydroid also contains third-party code that is licensed under specific open-source licenses from the original authors (See <b>Third-Party Code in Waydroid</b> below).&nbsp;</p>
-          <p style=""><b>Note</b>: For open-source licensed Waydroid, some specific parts are available under the GNU General Public License (GPL). For commercial licensees, all Waydroid related changes are available under commercial Waydroid licenses.</p>
-          <p style=""><b><i>Waydroid documentation</i></b>&nbsp; is available under commercial licenses from Navotpala Tech (Bliss Co-Labs), and under the terms of the GNU Free Documentation License (FDL) version 1.3, as published by the Free Software Foundation.</p>
-          <p style="">Educational licenses are available for students and educators in qualified educational institutions or universities.</p><br>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <h2>Purchasing and Sales Information</h2>
-          <p>To purchase a commercial Waydroid license, <a href="mailto:waydroid.project@gmail.com?subject=Waydroid%20License%20Pricing">contact us</a> with your request.</p>
-          <br>
-          <p>For further information and assistance about Waydroid licensing, contact us or see our website for further details.</p><br>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <h2>Third-Party Code in Waydroid</h2>
-          <p>The following documents the open-source licenses used in different parts of Waydroid:</p>
-          <div class="row">
-            <div class="col-md-12" style="">
-              <li>Waydroid inherits the same Apache v2 licensing that AOSP uses for most of the components, while many of the other components like Android-Generic Project use GPL-2.0 license.</li>
-              <li>For product use, we do not include proprietary components like Google Apps, Native-Bridge, and widevine.</li>
-              <li>Some features and toolkits like the <a href="https://bliss-bass.blisscolabs.dev" target="_BLANK">Bliss-BASS</a> rebranding toolkit might require additional licensing to be obtained by the customer.</li>
-            </div>
+        <div class="col-lg-4 mb-4">
+          <div class="license-card license-path">
+            <span class="license-step">Path 2</span>
+            <h3>My company ships Vanilla, unchanged</h3>
+            <p>You may use the public <strong>Vanilla</strong> image at no cost when the product needs nothing beyond that image and you do not keep changes private. If you change the open-source code, share those changes or publish the source yourself.</p>
           </div>
-          <p> - <a href="https://source.android.com/docs/setup/about/licenses" target="_BLANK">AOSP Licenses</a> - <a href="https://github.com/BlissRoms-x86/manifest/blob/arcadia-x86/License" target="_BLANK">Bliss OS License</a> - <a href="https://github.com/android-generic/vendor_ag/blob/unified/LICENSE.md" target="_BLANK">Android-Generic Project License</a> - <a href="https://github.com/boringdroid/boringdroid/blob/master/LICENSE" target="_BLANK">Boringdroid License</a> - <br>
-          </p>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="license-card license-path license-path-stop">
+            <span class="license-step">Path 3</span>
+            <h3>We need Google Play or Widevine</h3>
+            <p>Those cannot be licensed for Waydroid. Google licenses the Play Store (GMS) only for a single device SKU whose components will not change. Widevine has the same restriction. Generic systems such as Waydroid, Bliss OS, and Bass OS are not eligible. A commercial license from us does not add them. If your apps need GMS features, we offer MicroG-based builds instead. MicroG supports the majority of those features. The majority of Android Enterprise features are supported too, but some are not. MicroG is not a Google license.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- ====== Hero End ====== -->
-  <!-- ====== Features Start ====== -->
-  <div class="py-5" style="" id="oems">
+  </section>
+
+  <section class="py-5 license-section license-band" id="options">
+    <span id="oems"></span>
     <div class="container">
+      <h2>License options</h2>
+      <p class="license-intro">Waydroid can be used under a few different licenses, depending on what you are doing.</p>
       <div class="row">
-        <h3 class="display-4 text-center">FAQ</h3>
-        <div class="col-md-6 p-3">
-          <h4>Q: Is Waydroid suitable for individuals?</h4>
-          <p> A: Yes, Waydroid public releases are designed to be used to allow Android applications to run on top of a normal Linux environment<br><br>We offer users multiple types of builds to help fit their needs:<br>- <b>Gapps Builds</b>: Comes with Google Play Store<br>- <b>Vanilla Builds</b>: Comes with no added apps and services.&nbsp;</p>
+        <div class="col-md-4 mb-4">
+          <div class="license-card">
+            <span class="license-pill license-pill-ok">Open source</span>
+            <h3>GNU GPL version 3</h3>
+            <p>Use this when you can follow GPL version 3. You may use and change Waydroid if you share your changes under that same license.</p>
+            <p>GPL version 3 covers Waydroid applications and products that stay open source.</p>
+          </div>
         </div>
-        <div class="col-md-6 p-3">
-          <h4>Q: Does Waydroid include proprietary software?</h4>
-          <p> A: Yes. Our GMS/Gapps releases include proprietary software, and are intended for individuals only, while our Vanilla builds might include some proprietary parts as well.&nbsp;<br><br>Proprietary redistributables in all Waydroid public builds:&nbsp;<br>- some media codecs (for decoding H.264/HEVC)&nbsp;<br><br>Extra proprietary redistributables in Waydroid Gapps builds include Google Play Serivces &amp; Google Play Store.</p>
+        <div class="col-md-4 mb-4">
+          <div class="license-card">
+            <span class="license-pill license-pill-warn">Commercial</span>
+            <h3>Commercial license</h3>
+            <p>Use this when you are building proprietary or commercial software and you do not want to share source code with third parties, or you otherwise cannot follow GPL version 3.</p>
+            <p>Commercial licenses come from <a href="https://navotpala.tech/" target="_blank" rel="noopener noreferrer">Navotpala Tech</a> (Bliss Co-Labs Inc.). They also offer <strong>Waydroid_NT</strong>, a commercial Waydroid client rewritten in C++ for speed and stability.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="license-card">
+            <span class="license-pill">Education</span>
+            <h3>Educational licenses</h3>
+            <p>Available for students and educators at qualified schools and universities. <a href="mailto:waydroid.project@gmail.com?subject=Waydroid%20License%20Pricing">Ask us</a> if this fits your institution.</p>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-6 p-3">
-          <h4>Q: Is Waydroid suitable for companies?</h4>
-          <p> A: Yes, but not all builds. We produce vanilla Waydroid builds. While those builds are very basic, they do include much of what would be needed to base a product off of. If your product requires no additional changes on top of what is released to the public, then you are free to use it at no cost.<br>If your product requires Google Apps, ARM/ARM64 Native-Bridge, or Widevine, due to licensing restrictions, we suggest that you <a href="mailto:waydroid.project@gmail.com?subject=Development Contract Inquiry">reach out</a> and we can help you look into alternative options using open-source solutions.&nbsp;<br></p>
-        </div>
-        <div class="col-md-6 p-3">
-          <h4>Q: Can my company use Waydroid with Gapps as-is?</h4>
-          <p> A: No. The Waydroid versions that include Google Play Store, native-bridge, or widevine are not fit for commercial use or meant to be included in products as they contain proprietary features and services that typically require per-product licensing through Google, Intel, or others.&nbsp;We do however release public Vanilla builds that do not contain any proprietary resources.<br><br>Most of those proprietary licenses are not eligible for use in&nbsp;generic operating-system setups. Some require the device to pass certification programs that is only meant for single device certifications. For this reason, we do offer open-source alternatives.<br></p>
-        </div>
+      <div class="license-callout license-callout-stop mb-4">
+        <p><strong>Google Play (GMS) and Widevine are not available for generic platforms.</strong> Google licenses GMS only for a single SKU: a device whose components will not change. Widevine is under the same restriction. Waydroid, Bliss OS, Bass OS, and similar projects are not eligible. A commercial Waydroid license cannot add them, and a public image that includes them is only for personal use. Downloading a public image is not compliance. If your apps need GMS features, we offer <strong>MicroG-based builds</strong>. MicroG supports the majority of GMS features. The majority of Android Enterprise features are supported too, but some are not. MicroG is not a Google license.</p>
+      </div>
+      <div class="license-callout mb-4">
+        <p><strong>Open-source Native Bridge on Android 16 and newer can be shipped.</strong> Waydroid-based builds from Android 16 onward include some open-source Native Bridge options. Those options may be included in a commercial build. A proprietary Native Bridge in an older public image is not a license to ship that proprietary code.</p>
+      </div>
+      <div class="license-callout license-callout-warn mb-4">
+        <p>Any change to the Waydroid source or to compiled images has to follow the license. That includes repackaging, distributing a changed image, or removing included system components. If you cannot follow GNU GPL version 3, you need a commercial license from <a href="https://navotpala.tech/" target="_blank" rel="noopener noreferrer">Navotpala Tech</a> (Bliss Co-Labs Inc.).</p>
       </div>
       <div class="row">
-        <div class="col-md-6 p-3">
-          <h4>Q: Can my company use Waydroid source-code in a product?</h4>
-          <p style=""> A: Yes, <b>If you are an individual developer, a startup, or represent some other business enterprise and you are interested in using our sources, the open-source licenses we maintain allow you to use the source at no cost as long as you use it: A) as-is, B) you contribute any changes made back to the source, or C) produce the full source to the public independently.</b> If you would like to use our source and make changes to it that you do not plan on releasing as open-source, we request you contact us to work out a <b>per-device licensing agreement</b> and/or setup a <a href="mailto:waydroid.project@gmail.com?subject=Development Contract Inquiry">development contract</a> for branding, optimizations and specific needs.</p>
+        <div class="col-lg-6 mb-4">
+          <div class="license-card">
+            <h3>Waydroid project changes</h3>
+            <p>Under the open-source license, some specific parts of Waydroid are available under the GPL. For commercial licensees, Waydroid-related changes are available under the commercial Waydroid license.</p>
+          </div>
         </div>
-        <div class="col-md-6 p-3">
-          <h4> Q: Does my company have to release any changes made to the collective source code of Waydroid? </h4>
-          <p> A: This all depends on where the changes in the source were made, as many repos in the project retain a different OSS Licenses, there are different requirements per repo. If you are unsure if your company needs to release the source for any of the changes made, please feel free to contact us.<br><br>Another thing to pay attention to is if the tools being used require the end product or alterations to be released. Some Apache 2.0 licensed projects allow for that requirement to be made. Some versions of Android-Generic Project also have similar licensing requirements. We have put together a toolkit to help identify these types of licenses within the source. You can find that <a href="https://github.com/android-generic/agpm-auto-oss-license-documentation" target="_BLANK">here</a>.</p>
+        <div class="col-lg-6 mb-4">
+          <div class="license-card">
+            <h3>Documentation</h3>
+            <p>Waydroid documentation is available under commercial licenses from <a href="https://navotpala.tech/" target="_blank" rel="noopener noreferrer">Navotpala Tech</a> (Bliss Co-Labs Inc.), and under the GNU Free Documentation License (FDL) version 1.3, as published by the Free Software Foundation.</p>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12 pt-5 text-center">
-          <h1>Licensing Questions?</h1>
-          <h5>We try to offer a wide variety of licensing options that cater to organizations of all sizes.</h5>
-          <p class="mb-3">If you are not sure if you need a license, or just have some questions on our licensing options, please feel free to contact us. We love helping out others find the best way to contribute back to the source.</p>
-          <a class="btn btn-outline-primary mt-3" href="mailto:waydroid.project@gmail.com?subject=Licensing Inquiry">Contact Us</a>
+      <div class="license-card" id="purchase">
+        <h3>Purchasing and sales</h3>
+        <p>To buy a commercial Waydroid license, email us with the product and whether your changes will stay private. That license covers Waydroid. It cannot include Google Play (GMS) or Widevine, because those are not licensed for generic platforms. If your apps need GMS features, ask about a MicroG-based build. MicroG supports the majority of those features. The majority of Android Enterprise features are supported too, but some are not. Android 16 and newer commercial builds can include the open-source Native Bridge options. If you want the commercial client, ask about Waydroid_NT.</p>
+        <a class="ud-main-btn" href="mailto:waydroid.project@gmail.com?subject=Waydroid%20License%20Pricing">Request pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 license-section" id="third-party">
+    <div class="container">
+      <h2>Third-party code in Waydroid</h2>
+      <p class="license-intro">Waydroid also contains third-party code under the open-source licenses chosen by the original authors.</p>
+      <p>Waydroid inherits the Apache License 2.0 that AOSP uses for most components. Many other components, including Android-Generic Project, use GPL 2.0. For product use, we do not include Google Play (GMS) or Widevine. Those are not licensable on a generic system, and a public image that includes them is for individuals only. Android 16 and newer Waydroid-based builds do include some open-source Native Bridge options, and those can be part of a commercial build. Some toolkits, including the <a href="https://bassos.navotpala.tech/" target="_blank" rel="noopener noreferrer">Bliss-BASS</a> rebranding toolkit, need a separate license.</p>
+      <div class="row mt-4">
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="license-card license-links"><a href="https://source.android.com/docs/setup/about/licenses" target="_blank" rel="noopener noreferrer">AOSP licenses</a></div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="license-card license-links"><a href="https://github.com/BlissRoms-x86/manifest/blob/arcadia-x86/License" target="_blank" rel="noopener noreferrer">Bliss OS license</a></div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="license-card license-links"><a href="https://github.com/android-generic/vendor_ag/blob/unified/LICENSE.md" target="_blank" rel="noopener noreferrer">Android-Generic Project license</a></div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="license-card license-links"><a href="https://github.com/boringdroid/boringdroid/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">Boringdroid license</a></div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="license-card">Different repositories use different licenses. This <a href="https://github.com/android-generic/agpm-auto-oss-license-documentation" target="_blank" rel="noopener noreferrer">toolkit</a> helps identify which ones require you to release changes.</div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <section class="py-5 license-section license-band" id="faq">
+    <div class="container">
+      <h2>FAQ</h2>
+      <div class="license-callout license-callout-stop mb-4">
+        <p>If you represent a company, start here. <strong>Google Play (GMS) and Widevine cannot be licensed for Waydroid, Bliss OS, Bass OS, or any other generic platform.</strong> Google only offers GMS for a single device SKU whose components will not change, and Widevine follows the same rule. Public images that include them are for individuals only. When apps need GMS features, we offer MicroG-based builds. MicroG supports the majority of those features. The majority of Android Enterprise features are supported too, but some are not. Open-source Native Bridge options in Android 16 and newer Waydroid builds can be included in a commercial product.</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+          <div class="license-card license-card-stop">
+            <span class="license-pill license-pill-stop">Companies</span>
+            <p class="license-verdict verdict-limited">Not the public Google Play images</p>
+            <h3>Is Waydroid suitable for companies?</h3>
+            <p><strong>Not if you are using a public Google Play or Widevine image.</strong> Those components are not licensed for a generic product at all. Putting those images on devices, kiosks, signage, appliances, or customer hardware is not allowed, even if you leave the image unchanged and even if you only use it inside your own company. Buying a Waydroid license does not change that.</p>
+            <p>What a company may use without a paid Waydroid license is the public <strong>Vanilla</strong> image. It has no Google Apps or Widevine. It is basic. If your product needs nothing beyond that public open-source image <strong>and</strong> you make no closed-source changes, you may use it at no cost. Android 16 and newer builds may also include the open-source Native Bridge options.</p>
+            <p>Closed-source changes need a commercial license before you ship. <a href="mailto:waydroid.project@gmail.com?subject=Development%20Contract%20Inquiry">Contact us</a> for a Waydroid license. We cannot sell or arrange a Google Play (GMS) or Widevine license for this project. If your apps need GMS features, ask about a MicroG-based build. MicroG supports the majority of those features. The majority of Android Enterprise features are supported too, but some are not.</p>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+          <div class="license-card license-card-stop">
+            <span class="license-pill license-pill-stop">Not permitted</span>
+            <p class="license-verdict verdict-no">No</p>
+            <h3>Can my company use Waydroid with Google Play or Widevine?</h3>
+            <p><strong>No.</strong> Google licenses the Play Store and Play Services (GMS) only for a single device SKU whose components will not change. Widevine has the same restriction. Waydroid, Bliss OS, and Bass OS are generic platforms, so they are not eligible. A public image, a commercial Waydroid license, and a development contract do not create a GMS or Widevine license.</p>
+            <p>Shipping a public image that includes them is still not allowed, including:</p>
+            <ul class="license-list">
+              <li>Production, staging, or internal deployments you describe as "just for our devices"</li>
+              <li>Kiosks, point of sale, signage, school fleets, appliances, and preloads</li>
+              <li>Repacks, rebrands, or images where you only changed the wallpaper and apps</li>
+              <li>Internal tools you then give to customers or contractors</li>
+            </ul>
+            <p>If the apps you need depend on GMS, we offer MicroG-based builds instead of Google Play. MicroG supports the majority of GMS features. The majority of Android Enterprise features are supported too, but some are not. MicroG is not a Google license.</p>
+            <p>Native Bridge is handled separately. A proprietary Native Bridge in an older public image is not yours to ship. Android 16 and newer Waydroid-based builds include open-source Native Bridge options, and those can be included in a commercial build.</p>
+            <p>The public Vanilla build is the company-safe image. Finding an older public Google Play image on a mirror does not change the GMS rule. Those builds were published for individuals.</p>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+          <div class="license-card">
+            <span class="license-pill license-pill-ok">Individuals</span>
+            <p class="license-verdict verdict-yes">Yes, for personal use</p>
+            <h3>Is Waydroid suitable for individuals?</h3>
+            <p>Yes. Public releases are meant for personal use, running Android applications on a normal GNU/Linux system. <strong>Google Play and other proprietary options are for personal use only.</strong></p>
+            <ul class="license-list">
+              <li><strong>Google Play builds:</strong> include the Play Store. Individuals only.</li>
+              <li><strong>Vanilla builds:</strong> no added apps or services.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+          <div class="license-card">
+            <span class="license-pill license-pill-warn">Proprietary bits</span>
+            <p class="license-verdict verdict-limited">Not a product license</p>
+            <h3>Does Waydroid include proprietary software?</h3>
+            <p>Yes. Google Play releases include proprietary software and are <strong>for individuals only</strong>. Vanilla builds can still include some proprietary parts, typically media codecs. None of that is permission to ship those parts in a commercial product.</p>
+            <p>Proprietary pieces in public Waydroid builds:</p>
+            <ul class="license-list">
+              <li>Some media codecs, for decoding H.264 and HEVC</li>
+            </ul>
+            <p>Google Play builds also include Google Play Services and the Google Play Store, for personal use. A company cannot obtain a GMS or Widevine license for Waydroid, Bliss OS, or Bass OS, because those projects are generic platforms. Copying a public image does not create that license either.</p>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+          <div class="license-card">
+            <span class="license-pill">Source</span>
+            <p class="license-verdict verdict-limited">Yes, with conditions</p>
+            <h3>Can my company use Waydroid source code in a product?</h3>
+            <p>Yes, for the open-source trees. This does not cover Google Play or Widevine in some public images. Those cannot be licensed for a generic system. Open-source Native Bridge options from Android 16 and newer Waydroid builds are open source and may be included in a commercial build.</p>
+            <p><strong>If you are a developer, a startup, or a company, the open-source licenses allow you to use the source at no cost as long as you: A) use it as-is, B) contribute your changes back, or C) publish the full source yourself.</strong> As-is means the open-source code. A Google Play image in a product is covered in the company section above.</p>
+            <p>If you want to change our source and keep those changes private, <a href="mailto:waydroid.project@gmail.com?subject=Development%20Contract%20Inquiry">contact us</a> for a <strong>per-device license</strong> or a development contract. That covers branding, optimizations, and other work you do not plan to release as open source.</p>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+          <div class="license-card">
+            <span class="license-pill">Source</span>
+            <p class="license-verdict verdict-limited">Depends on the repository</p>
+            <h3>Does my company have to release changes?</h3>
+            <p>It depends on where you made the changes. Repositories in the project use different open-source licenses, and each one has its own rules. If you are not sure whether a change must be released, <a href="mailto:waydroid.project@gmail.com?subject=Licensing%20Inquiry">contact us</a>. Private changes plus a public Google Play image is still not a valid commercial setup.</p>
+            <p>Some tools also require the finished product, or your changes to it, to be released. Some Apache 2.0 projects allow that extra requirement, and some versions of Android-Generic Project do too. A <a href="https://github.com/android-generic/agpm-auto-oss-license-documentation" target="_blank" rel="noopener noreferrer">toolkit</a> can help you find those licenses in the source tree.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 license-section" id="product">
+    <div class="container">
+      <h2>Using Waydroid in a product</h2>
+      <p class="license-intro"><a href="https://navotpala.tech/" target="_blank" rel="noopener noreferrer">Navotpala Tech</a> (Bliss Co-Labs Inc.) is the commercial sponsor for this licensing model. They issue commercial licenses when a public Vanilla image is not enough. That license still cannot include Google Play (GMS) or Widevine. Apps that need GMS features can use a MicroG-based build. MicroG supports the majority of those features. The majority of Android Enterprise features are supported too, but some are not.</p>
+      <div class="row">
+        <div class="col-md-6 col-xl-3 mb-4">
+          <div class="license-card">
+            <h3>Open-source product</h3>
+            <p>Ship the public Vanilla image unchanged, or share the source for every change you make. No fee for the Waydroid license when you can follow the open-source terms. Android 16 and newer builds may include the open-source Native Bridge options.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3 mb-4">
+          <div class="license-card">
+            <h3>Waydroid_NT</h3>
+            <p><a href="https://navotpala.tech/" target="_blank" rel="noopener noreferrer">Navotpala Tech</a> (Bliss Co-Labs Inc.) offers Waydroid_NT, a commercial Waydroid client rewritten in C++ for speed and stability. It is separate from the open-source client on this site.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3 mb-4">
+          <div class="license-card">
+            <h3>Private changes</h3>
+            <p>Branding, optimizations, or features you will not release as open source need a per-device license or a development contract.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3 mb-4">
+          <div class="license-card">
+            <h3>Rebranding toolkit</h3>
+            <p>The <a href="https://bassos.navotpala.tech/" target="_blank" rel="noopener noreferrer">Bliss-BASS</a> rebranding toolkit can require its own license on top of the Waydroid license.</p>
+          </div>
+        </div>
+      </div>
+      <a class="ud-main-btn" href="mailto:waydroid.project@gmail.com?subject=Development%20Contract%20Inquiry">Talk about a product license</a>
+    </div>
+  </section>
+
+  <section class="py-5 license-section license-band" id="questions">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h2>Licensing questions?</h2>
+          <p>We offer licenses for organizations of different sizes. If you are not sure which license you need, email us and describe the product. We can help you sort out the right one.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+          <a class="ud-main-btn" href="mailto:waydroid.project@gmail.com?subject=Licensing%20Inquiry">Contact us</a>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- ====== Features End ====== -->
   <!-- ====== About Start ====== -->
   <!-- ====== About End ====== -->
@@ -195,7 +357,6 @@
   <!-- ====== Docs End ====== -->
   <!-- ====== FAQ Start ====== -->
   <!-- ====== FAQ End ====== -->
-  <section></section>
   <!-- ====== Team Start ====== -->
   <section id="donate">
     <div class="container-fluid">
@@ -276,7 +437,7 @@
             <p class="ud-footer-bottom-center"> A <a href="https://blisslabs.org"> BlissLabs</a> Project </p>
           </div>
           <div class="col-md-4">
-            <p class="ud-footer-bottom-right"> Copyright © 2022 All rights reserved. </p>
+            <p class="ud-footer-bottom-right"> Copyright © <span id="copyright-year">2026</span> All rights reserved. </p>
           </div>
         </div>
       </div>
@@ -345,6 +506,12 @@
       myModal.addEventListener('shown.bs.modal', function() {
         myInput.focus()
       })
+    }
+  </script>
+  <script>
+    var copyrightYear = document.getElementById("copyright-year");
+    if (copyrightYear) {
+      copyrightYear.textContent = String(new Date().getFullYear());
     }
   </script>
 </body>

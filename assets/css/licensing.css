@@ -1,0 +1,218 @@
+/* Licensing page: light cards that match the existing Waydroid site. */
+
+.license-logo {
+  width: min(280px, 72%);
+  height: auto;
+  margin-bottom: 1.25rem;
+}
+
+.license-kicker {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.license-hero h1 {
+  color: #fff;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+
+.license-lead {
+  color: #fff;
+  font-size: 1.125rem;
+  line-height: 1.65;
+  max-width: 44rem;
+  margin: 0 auto 1.5rem;
+  opacity: 0.92;
+}
+
+.license-jumps a {
+  margin: 0 0.9rem 0.5rem 0;
+  color: rgba(255, 255, 255, 0.86);
+  font-weight: 600;
+}
+
+.license-jumps a:hover,
+.license-jumps a:focus {
+  color: #fff;
+}
+
+.license-page .license-section {
+  scroll-margin-top: 110px;
+}
+
+.license-page .license-section h2 {
+  margin-bottom: 0.75rem;
+}
+
+.license-page .license-section > .container > p,
+.license-intro {
+  max-width: 46rem;
+  margin-bottom: 1.5rem;
+}
+
+.license-page strong {
+  color: var(--heading-color);
+  font-weight: 700;
+}
+
+.license-card {
+  background: #fff;
+  border: 1px solid #e7eaee;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  height: 100%;
+  box-shadow: 0 18px 40px -28px rgba(33, 43, 54, 0.55);
+}
+
+.license-card h3 {
+  font-size: 1.35rem;
+  line-height: 1.35;
+  margin-bottom: 0.75rem;
+}
+
+.license-card p,
+.license-callout p,
+.license-section p {
+  margin-bottom: 0.85rem;
+}
+
+.license-card p:last-child,
+.license-card ul:last-child {
+  margin-bottom: 0;
+}
+
+.license-card-stop {
+  border-color: #f3c3c8;
+}
+
+.license-path {
+  border-top: 4px solid var(--primary-color);
+}
+
+.license-path-ok {
+  border-top-color: #1f8a4c;
+}
+
+.license-path-stop {
+  border-top-color: #dc3545;
+}
+
+.license-step {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  margin-bottom: 0.35rem;
+}
+
+.license-pill {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  background: #eef2f6;
+  color: #334155;
+  margin-bottom: 0.75rem;
+}
+
+.license-pill-ok {
+  background: #e7f6ef;
+  color: #0f7a45;
+}
+
+.license-pill-warn {
+  background: rgba(247, 157, 0, 0.18);
+  color: #8a5600;
+}
+
+.license-pill-stop {
+  background: #fde8ea;
+  color: #b4232c;
+}
+
+.license-verdict {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+}
+
+.verdict-no {
+  color: #b4232c;
+}
+
+.verdict-yes {
+  color: #0f7a45;
+}
+
+.verdict-limited {
+  color: #8a5600;
+}
+
+.license-callout {
+  border-left: 4px solid var(--primary-color);
+  background: #fff8eb;
+  padding: 1rem 1.25rem;
+  border-radius: 0 0.75rem 0.75rem 0;
+}
+
+.license-callout-stop {
+  border-left-color: #dc3545;
+  background: #fff5f5;
+}
+
+.license-callout-warn {
+  border-left-color: #f79d00;
+  background: #fff8eb;
+}
+
+.license-callout p:last-child {
+  margin-bottom: 0;
+}
+
+.license-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.85rem;
+}
+
+.license-list li {
+  position: relative;
+  padding: 0.35rem 0 0.35rem 1.25rem;
+  color: var(--body-color);
+  line-height: 1.55;
+}
+
+.license-list li::before {
+  content: "";
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--primary-color);
+  position: absolute;
+  left: 0;
+  top: 0.75rem;
+}
+
+.license-band {
+  background: #f7f8fa;
+}
+
+.license-links a {
+  font-weight: 600;
+}
+
+.license-card .ud-main-btn {
+  margin-top: 0.5rem;
+}
